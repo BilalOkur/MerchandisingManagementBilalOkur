@@ -10,12 +10,13 @@ namespace MerchandisingManagementDataAccess
 {
     public class ProductDataAccess : RepositoryBase<Product>, IProductDataAccess
     {
+        //special Methods about product
         private readonly MerchandisingManagementDataContext _dbContext;
         public ProductDataAccess(MerchandisingManagementDataContext dbContext) : base(dbContext)
         {
             _dbContext = dbContext;
         }
-        //special Methods about product
+        
 
         public List<ProductSearchResult> SearchLiveProduct(string keyword)
         {
