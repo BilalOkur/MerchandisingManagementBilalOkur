@@ -46,7 +46,7 @@ namespace MerchandisingManagementServices
             }
 
             _productDataAccess.Add(product);
-            return new AddProductResponse() { IsSucceed = false, WarningMessage = string.Empty };
+            return new AddProductResponse() { IsSucceed = true, WarningMessage = string.Empty };
         }
     }
 }
